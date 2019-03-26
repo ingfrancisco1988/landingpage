@@ -1,0 +1,34 @@
+.container, .container-fluid{
+    display: block;
+    /* width: 100%; */
+    /* text-align: center; */
+    margin: 1rem auto;
+}
+
+.container {max-width: 1400px;}
+
+.item{
+    display: block;
+    
+}  
+    /* Los anchos se calculan por regla de 3
+    Mi reticula es de 12 Columnas
+    Mi base de 960px
+    12col ----> 960px;
+    n-col ----> ???px;
+
+    (n-col *960px)/12 col = resultado en px
+    ejemplo
+    (6col * 960px)/ 12col = 480px */
+  .col12 {width: 100%;}
+.col11 {width: 91.66666666666667%;}
+.col10 {width: 83.33333333333333%;}
+.col9 {width: 75%;}
+.col8 {width: 66.66666666666667%;}
+.col7 {width: 58.33333333333333%;}
+.col6 {width: 50%;}
+.col5 {width: 41.66666666666667%;}
+.col4 {width: 33.33333333333333%;}
+.col3 {width: 25%;}
+.col2 {width: 16.66666666666667%;}
+.col1 {width: 8.333333333333333%; }

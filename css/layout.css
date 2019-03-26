@@ -1,0 +1,33 @@
+/*Tecnica del float*/
+.floatl {float: left;}
+
+.floatr {float: right;}
+
+.clear, .clear::after, .clear::before {clear: both;}
+
+.clear::after, .clear::before{
+    content: " ";
+    display: block;
+}
+
+/* Tecnica display: inline-block;*/
+.i-block {display: inline-block;}
+
+.v-baseline {vertical-align: baseline;}
+
+.v-bottom {vertical-align: bottom;}
+
+.v-middle {vertical-align: middle;}
+
+.v-top    {vertical-align: top;}
+
+.font0    {font: 0px;}
+
+/* Tecnica de tabla display:table*/
+.table {display: table;}
+.table-cell {display:table-cell;}
+
+/* Tecnica caja flexible display:flex*/
+
+.flex { display: flex;}
+.flex-item { flex:none;}

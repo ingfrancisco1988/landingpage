@@ -3,15 +3,12 @@
     padding: 0;    
     background-color:rgb(239, 241, 243);
     box-sizing: border-box;
+    font-size: 16px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 img{
-    max-width: 100%;
-    
-    
-   
-    
+    max-width: 100%;  
 }
 
 h1,h2,h3,p
@@ -19,7 +16,12 @@ h1,h2,h3,p
     margin-bottom: 10px; 
     color:#E6505C;
 }
+h1
+{
+    font-size: 2rem;
+}
 h2{
+    font-size: 1.5rem;
     border: 1px solid rgb(202, 214, 243);
     margin-left:15%;
     margin-right:15%;
@@ -27,6 +29,7 @@ h2{
     background-color: rgb(169, 176, 240);
 }
 h3{
+    font-size: 1.25rem;
     border-bottom: 2px solid rgb(204, 216, 226);
     -webkit-box-shadow: 2px 11px 26px -4px rgba(0,0,0,0.89);
     -moz-box-shadow: 2px 11px 26px -4px rgba(0,0,0,0.89);
@@ -48,7 +51,6 @@ p{
     margin-right:10px;
     font-size: 1rem;
     text-align: justify;
-
 }
 
 
@@ -59,8 +61,6 @@ p{
     display: inline-block; 
     width: 80%;
     margin-bottom:15px; 
-    
-
 }
 .navbar-item, .navbar-item>a
 {
@@ -70,8 +70,6 @@ p{
     padding: 4px;
     border-radius: 6px  6px;
     margin-bottom: 0.5px; 
-    
-    
 }
 
 
@@ -106,7 +104,6 @@ p{
     text-align: left;
     
 }
-
 
 input[type="submit"]{
     float: right;
@@ -171,3 +168,40 @@ input[type=text],input[type=email], textarea {
     color: rgba(231, 81, 81, 0.664);
     font-size: 0.75rem; 
   }
+
+  /* medias querys */
+
+  @media screen and (min-width:75em)
+  {
+      body {
+    background: black;
+      }
+    
+    .navbar>ul{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .navbar-item
+    {
+        flex-grow:3
+    }
+
+    h2,h3{
+        width: 40%;
+        margin-left:auto;
+        margin-right:auto;  
+    }
+    .form 
+    {
+        width:80%;
+        margin: 0 auto;
+    } 
+    .container>img{
+        height: 50vh;
+        width: 40%;
+    }
+
+  }
+  
