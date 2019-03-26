@@ -178,7 +178,7 @@ input[type=text],input[type=email], textarea {
     }
     article>img
     {
-        max-width: 80%;  
+        max-width: 90%;  
         width: 80%;
     } 
 
@@ -186,20 +186,87 @@ input[type=text],input[type=email], textarea {
 }
  @media screen and (min-width:30em)
 {
-    body{background: blue;}
+ 
+    .navbar
+    {
+        width: 60%;
+    }
+    div>p
+    {
+        width: 80%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    article>img
+    {
+        max-width: 60vh;  
+        width: 100%;
+    } 
+
+
 }
  @media screen and (min-width:37.5em)
-{body{background: red;}}
+{
+    .navbar{
+        width: 90%;
+    }
+     .flexible{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+    } 
+    .navbar-item
+    {        
+        /* flex-grow:1; */
+        width:40%;
+    }
+
+    div
+    {        
+        width:40%;
+    }
+    div>img{
+        max-width: 40vh;
+        max-height:50vh;
+        
+    }
+    div>h2,div>h3,div>p{
+        width: 90%;
+        margin-left:auto;
+        margin-right:auto;  
+    }
+    article>h2,article>h3
+    {
+        width: 50%;
+        margin-left:auto;
+        margin-right:auto; 
+    }
+    .form 
+    {
+        width:60%;
+        margin: 0 auto;
+    }
+}
  @media screen and (min-width:48em)
-{body{background: cyan;}}
+{
+
+    .navbar-item
+    {
+        width: 20%;
+        flex-grow:1
+    }
+
+}
  @media screen and (min-width:64em)
-{body{background:magenta;}}
+{
+    .navbar
+    {
+        width: 90%;
+    }
+}
   @media screen and (min-width:75em)
   {
-      body {
-    background: black;
-      }
-    
      .navbar{
         width: 90%;
     }
@@ -222,7 +289,7 @@ input[type=text],input[type=email], textarea {
     }
     .form 
     {
-        width:80%;
+        width:60%;
         margin: 0 auto;
     } 
     div>img{
