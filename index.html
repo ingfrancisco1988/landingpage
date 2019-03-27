@@ -16,11 +16,11 @@
             <img id="inicio"src="img/header.jpg" alt="Imagen de game of trhone"> 
             <nav class="navbar">
                 <ul class="flexible">
-                    <li class="navbar-item"><a  href="#inicio">Inicio</a></li>
-                    <li class="navbar-item"><a  href="#familias">Casas</a></li>
-                    <li class="navbar-item"><a  href="#personajes">Personajes</a></li>
-                    <li class="navbar-item"><a  href="#animaciones">Animaciones</a></li>  
-                    <li class="navbar-item"><a  href="#sugerencias">Sugerencias</a></li>                  
+                    <li id="click"class="navbar-item"><a  href="#inicio">Inicio</a></li>
+                    <li id="click"class="navbar-item" ><a  href="#familias">Casas</a></li>
+                    <li id="click"class="navbar-item"><a  href="#personajes">Personajes</a></li>
+                    <li id="click"class="navbar-item"><a  href="#animaciones">Animaciones</a></li>  
+                    <li id="click"class="navbar-item"><a  href="#sugerencias">Sugerencias</a></li>                  
                 </ul>
             </nav>   
     </header>
@@ -39,7 +39,7 @@
                 <img src="img/casa1.jpg" ALT="HOUSE OF ARRYN">
                 <P>&nbsp &nbsp &nbsp &nbsp La Casa Arryn del Nido de Águilas es la casa principal del Valle de Arryn y las Montañas de la Luna. Su asentamiento principal es el Nido de Águilas, pero tienen muchos otros asentamientos menores. Su linaje se extiende hasta la antigua nación de los Ándalos que invadió Poniente. Su emblema es una luna creciente y un halcón de plata en campo de cielo.[1] Su lema es Tan Alto como el Honor</P>
             </DIV>
-         
+            
             <DIV class="container">
                 <H3>HOUSE OF MORMONT</H3>
                 <img src="img/casa2.jpg" ALT="HOUSE OF MORMONT">
@@ -199,8 +199,7 @@
             <h3>Registre sus datos</h3>
             <br>
             <article class="container form">
-                
-                
+
                 <form action="">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" placeholder="Pedrito los Palotes">
@@ -211,12 +210,22 @@
                      <input type="submit" value="Enviar"  >
                 </form>
             </article>
+            <button id="scrollArriba" class="scrollArriba">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                   <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                   <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+             </button>
+            
+            
     </MAIN>
     <footer class="footer">
 
         Derechos del autor &copy  By <a href="https://www.linkedin.com/in/ingfrancisco-javier/">INGFrancisco Castañeda</a>
 
     </footer>
+    <script src="js/botonSubir.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
     
 </body>
 </html>
